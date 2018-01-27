@@ -1,7 +1,5 @@
 package com.caronae.withu.caronae.flow.splash
 
-import android.content.Context
-import android.support.v4.content.ContextCompat
 import com.caronae.withu.caronae.R
 import com.daimajia.androidanimations.library.Techniques
 import com.viksaa.sssplash.lib.activity.AwesomeSplash
@@ -13,7 +11,7 @@ class SplashActivity : AwesomeSplash() {
     override fun initSplash(configSplash: ConfigSplash?) {
 
         //Circular reveal
-        configSplash?.backgroundColor = R.color.colorPrimary
+        configSplash?.backgroundColor = R.color.primaryColor
         configSplash?.animCircularRevealDuration = 2000
         configSplash?.revealFlagX = Flags.REVEAL_RIGHT
         configSplash?.revealFlagY = Flags.REVEAL_BOTTOM
@@ -25,6 +23,7 @@ class SplashActivity : AwesomeSplash() {
 
         //Title
         configSplash?.titleSplash = getString(R.string.app_name)
+        configSplash?.titleTextColor = R.color.primaryTextColor
     }
 
     override fun animationsFinished() {
