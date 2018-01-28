@@ -1,6 +1,8 @@
 package com.caronae.withu.caronae.flow.splash
 
 import com.caronae.withu.caronae.R
+import com.caronae.withu.caronae.extensions.goToActivity
+import com.caronae.withu.caronae.flow.onboard.OnboardActivity
 import com.daimajia.androidanimations.library.Techniques
 import com.viksaa.sssplash.lib.activity.AwesomeSplash
 import com.viksaa.sssplash.lib.cnst.Flags
@@ -28,6 +30,7 @@ class SplashActivity : AwesomeSplash() {
 
     override fun animationsFinished() {
         //TODO verify if user is logged or not, send to onboarding or main
+        goToActivity(this, OnboardActivity::class.java)
     }
 
 }

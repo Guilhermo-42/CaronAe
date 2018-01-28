@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".flow.main.MainActivity" />
+        <activity android:name=".flow.onboard.OnboardActivity"/>
     </application>
 
 </manifest>
