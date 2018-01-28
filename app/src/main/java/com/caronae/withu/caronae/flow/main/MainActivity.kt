@@ -11,6 +11,7 @@ import android.view.MenuItem
 import com.caronae.withu.caronae.R
 import com.caronae.withu.caronae.models.main.MainState
 import com.caronae.withu.caronae.models.main.State
+import com.caronae.withu.caronae.network.auth.BaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -66,6 +67,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_about -> {
                 model?.onStateChanged(MainState(State.STATE_ABOUT))
             }
+            R.id.nav_logout -> {
+                model?.onStateChanged(MainState(State.STATE_LOG_OUT))
+            }
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
@@ -81,6 +85,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             State.STATE_HELP -> TODO()
             State.STATE_ABOUT -> TODO()
             State.STATE_LOADING -> TODO()
+            State.STATE_LOG_OUT -> BaseAuth().signOut(this)
         }
     }
 

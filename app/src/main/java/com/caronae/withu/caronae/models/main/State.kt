@@ -11,6 +11,7 @@ enum class State {
     STATE_SHARE,
     STATE_HELP,
     STATE_ABOUT,
-    STATE_LOADING
+    STATE_LOADING,
+    STATE_LOG_OUT
 
 }

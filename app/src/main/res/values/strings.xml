@@ -11,13 +11,15 @@
     <string name="nav_drawer_item_share">Share</string>
     <string name="nav_drawer_item_help">Help</string>
     <string name="nav_drawer_item_about">About</string>
+    <string name="nav_drawer_item_logout">Logout</string>
 
     <!-- Ui Messages -->
     <string name="sign_in_no_connection_message">No connection detected, \ntry again?</string>
     <string name="sign_in_unknown_error_message">Error, \ntry again?</string>
     <string name="sign_in_no_connection_positive">Try again</string>
     <string name="sign_in_no_connection_negative">Exit</string>
-
+    <string name="user_signout_complete">Logged out with success!</string>
+    <string name="user_signout_failure">Error trying to logout!</string>
     <!-- Content descriptions -->
     <string name="nav_header_profile_image_content_description">Profile image</string>
 </resources>
