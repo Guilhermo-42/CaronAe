@@ -29,3 +29,9 @@ fun Any.goToActivity(context: Context, activity: Class<*> ) {
     val intent = Intent(context, activity)
     context.startActivity(intent)
 }
+
+fun Any.goToActivityNoBackStack(context: Activity, activity: Class<*>) {
+    val intent = Intent(context, activity)
+    context.startActivity(intent)
+    context.finishAffinity()
+}

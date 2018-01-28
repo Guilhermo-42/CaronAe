@@ -2,6 +2,7 @@ package com.caronae.withu.caronae.flow.splash
 
 import com.caronae.withu.caronae.R
 import com.caronae.withu.caronae.extensions.goToActivity
+import com.caronae.withu.caronae.extensions.goToActivityNoBackStack
 import com.caronae.withu.caronae.flow.onboard.OnboardActivity
 import com.daimajia.androidanimations.library.Techniques
 import com.viksaa.sssplash.lib.activity.AwesomeSplash
@@ -26,11 +27,12 @@ class SplashActivity : AwesomeSplash() {
         //Title
         configSplash?.titleSplash = getString(R.string.app_name)
         configSplash?.titleTextColor = R.color.primaryTextColor
+
     }
 
     override fun animationsFinished() {
         //TODO verify if user is logged or not, send to onboarding or main
-        goToActivity(this, OnboardActivity::class.java)
+        goToActivityNoBackStack(this, OnboardActivity::class.java)
     }
 
 }
