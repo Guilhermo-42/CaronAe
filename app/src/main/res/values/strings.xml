@@ -12,6 +12,12 @@
     <string name="nav_drawer_item_help">Help</string>
     <string name="nav_drawer_item_about">About</string>
 
+    <!-- Ui Messages -->
+    <string name="sign_in_no_connection_message">No connection detected, \ntry again?</string>
+    <string name="sign_in_unknown_error_message">Error, \ntry again?</string>
+    <string name="sign_in_no_connection_positive">Try again</string>
+    <string name="sign_in_no_connection_negative">Exit</string>
+
     <!-- Content descriptions -->
     <string name="nav_header_profile_image_content_description">Profile image</string>
 </resources>

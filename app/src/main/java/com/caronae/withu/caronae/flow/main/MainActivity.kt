@@ -1,9 +1,7 @@
 package com.caronae.withu.caronae.flow.main
 
-import android.app.Activity
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
-import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
@@ -11,11 +9,8 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.caronae.withu.caronae.R
-import com.caronae.withu.caronae.extensions.SIGN_IN_INTENT
 import com.caronae.withu.caronae.models.main.MainState
 import com.caronae.withu.caronae.models.main.State
-import com.caronae.withu.caronae.network.auth.BaseAuth
-import com.firebase.ui.auth.IdpResponse
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -41,7 +36,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         nav_view.setNavigationItemSelectedListener(this)
 
-        BaseAuth().verifyUserLogged(this)
     }
 
     override fun onBackPressed() {
@@ -90,20 +84,4 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-
-        if (requestCode == SIGN_IN_INTENT) {
-            val response = IdpResponse.fromResultIntent(data)
-
-            //Login success
-            if (resultCode == Activity.RESULT_OK) {
-
-            } else {
-                //Login failed
-            }
-
-        }
-
-    }
 }
