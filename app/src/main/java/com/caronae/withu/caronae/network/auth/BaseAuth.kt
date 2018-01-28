@@ -2,6 +2,7 @@ package com.caronae.withu.caronae.network.auth
 
 import android.app.Activity
 import android.content.Intent
+import com.caronae.withu.caronae.R
 import com.caronae.withu.caronae.extensions.goToActivityNoBackStack
 import com.caronae.withu.caronae.extensions.navigateToSignInActivity
 import com.caronae.withu.caronae.flow.main.MainActivity
@@ -10,8 +11,8 @@ import com.google.firebase.auth.FirebaseAuth
 import java.util.*
 
 /**
-* Created by Guilherme on 27/01/2018.
-*/
+ * Created by Guilherme on 27/01/2018.
+ */
 
 class BaseAuth {
 
@@ -28,11 +29,14 @@ class BaseAuth {
 
     private fun getSignInIntent(): Intent {
         val authUi: AuthUI = AuthUI.getInstance()
-        return authUi.createSignInIntentBuilder().setAvailableProviders(
-                Arrays.asList(
-                        AuthUI.IdpConfig.EmailBuilder().build()
+        return authUi.createSignInIntentBuilder()
+                .setAvailableProviders(
+                        Arrays.asList(
+                                AuthUI.IdpConfig.EmailBuilder().build()
+                        )
                 )
-        ).build()
+                .setTheme(R.style.SignIn)
+                .build()
     }
 
 }
