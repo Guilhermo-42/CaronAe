@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="/fragment.kt">
           <value>
             <set />
@@ -34,6 +39,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/events/RidesDataRetrieveEvent.kt">
           <value>
             <set />
           </value>
@@ -68,6 +78,81 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/mock/Mock.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/Collections.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/DatabaseCollections.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/Ride.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/Car.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/Driver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/Local.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/Ride.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/RideTimes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/local/ArrivalLocal.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/local/ArrivalTime.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/local/DepartureLocal.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/local/Local.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/time/DepartureTime.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/time/Time.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/main/MainState.kt">
           <value>
             <set />
@@ -79,6 +164,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/network/auth/BaseAuth.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/network/database/BaseDatabase.kt">
           <value>
             <set />
           </value>

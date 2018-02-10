@@ -9,11 +9,15 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.caronae.withu.caronae.R
+import com.caronae.withu.caronae.events.RidesDataRetrieveEvent
 import com.caronae.withu.caronae.models.main.MainState
 import com.caronae.withu.caronae.models.main.State
 import com.caronae.withu.caronae.network.auth.BaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import org.greenrobot.eventbus.EventBus
+import org.greenrobot.eventbus.Subscribe
+import org.greenrobot.eventbus.ThreadMode
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -23,6 +27,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        EventBus.getDefault().register(this)
 
         model = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
@@ -37,6 +43,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         nav_view.setNavigationItemSelectedListener(this)
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        EventBus.getDefault().unregister(this)
     }
 
     override fun onBackPressed() {
@@ -87,6 +98,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             State.STATE_LOADING -> TODO()
             State.STATE_LOG_OUT -> BaseAuth().signOut(this)
         }
+    }
+
+    /* Event listeners */
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    fun onEvent(event: RidesDataRetrieveEvent) {
     }
 
 }
