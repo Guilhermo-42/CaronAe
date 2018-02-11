@@ -73,6 +73,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/flow/rides/RidesAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/flow/rides/RidesFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/flow/splash/SplashActivity.kt">
           <value>
             <set />
@@ -119,6 +129,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/RideTimes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/Rido.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/models/database/rides/Rido.kt">
           <value>
             <set />
           </value>
@@ -188,7 +208,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_rides.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/rides_list_item.xml">
           <value>
             <set />
           </value>
@@ -219,6 +249,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../bmw-byod-android-app/mobile/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../bmw-byod-android-app/sdk/src/main/java/br/com/aisdigital/bmw/byod/android/sdk/models/media/Media.java">
           <value>
             <set />
           </value>

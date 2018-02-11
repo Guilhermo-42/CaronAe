@@ -22,4 +22,7 @@
     <string name="user_signout_failure">Error trying to logout!</string>
     <!-- Content descriptions -->
     <string name="nav_header_profile_image_content_description">Profile image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
