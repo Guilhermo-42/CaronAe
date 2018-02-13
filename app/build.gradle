@@ -41,9 +41,19 @@ dependencies {
     implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.1'
     implementation 'org.greenrobot:eventbus:3.1.1'
     implementation 'com.android.support:support-v4:27.0.2'
+
+    implementation "android.arch.lifecycle:extensions:$rootProject.arch_version"
+    implementation "android.arch.persistence.room:runtime:1.0.0"
+    implementation "android.arch.lifecycle:extensions:$rootProject.arch_version"
+    implementation "android.arch.lifecycle:reactivestreams:$rootProject.arch_version"
+
+    annotationProcessor "android.arch.lifecycle:compiler:$rootProject.arch_version"
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+
 
 apply plugin: 'com.google.gms.google-services'

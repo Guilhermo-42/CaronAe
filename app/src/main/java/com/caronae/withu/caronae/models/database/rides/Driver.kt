@@ -1,9 +1,11 @@
 package com.caronae.withu.caronae.models.database.rides
 
+import java.io.Serializable
+
 /**
 * Created by Guilherme on 28/01/2018.
 */
-class Driver{
+class Driver: Serializable{
     var gender: String? = null
     var age: Int? = null
     var firstName: String? = null

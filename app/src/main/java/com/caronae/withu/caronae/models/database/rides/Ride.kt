@@ -2,11 +2,12 @@ package com.caronae.withu.caronae.models.database.rides
 
 import com.caronae.withu.caronae.models.database.rides.local.Local
 import com.caronae.withu.caronae.models.database.rides.time.Time
+import java.io.Serializable
 
 /**
 * Created by Guilherme on 28/01/2018.
 */
-class Ride {
+class Ride: Serializable{
 
     var car: Car? = null
     var driver: Driver? = null

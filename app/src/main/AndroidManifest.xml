@@ -19,11 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".flow.main.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".flow.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".flow.onboard.OnboardActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".flow.rides.detail.RideDetailActivity"></activity>
     </application>
 
 </manifest>

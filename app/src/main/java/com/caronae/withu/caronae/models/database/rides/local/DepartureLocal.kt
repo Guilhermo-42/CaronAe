@@ -1,9 +1,11 @@
 package com.caronae.withu.caronae.models.database.rides.local
 
+import java.io.Serializable
+
 /**
 * Created by Guilherme on 28/01/2018.
 */
-class DepartureLocal{
+class DepartureLocal: Serializable{
 
     var cep: String? = null
     var city: String? = null

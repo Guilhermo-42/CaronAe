@@ -43,6 +43,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/events/DataEvent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/events/RidesDataRetrieveEvent.kt">
           <value>
             <set />
@@ -79,6 +84,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/flow/rides/RidesFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/flow/rides/RidesViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/caronae/withu/caronae/flow/rides/detail/RideDetailActivity.kt">
           <value>
             <set />
           </value>
@@ -249,6 +264,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../bmw-byod-android-app/mobile/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../bmw-byod-android-app/mobile/src/main/java/br/com/aisdigital/bmw/byod/android/app/flow/climate/ClimateFragment.kt">
           <value>
             <set />
           </value>
