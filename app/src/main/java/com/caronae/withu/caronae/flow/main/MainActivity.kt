@@ -14,6 +14,8 @@ import com.caronae.withu.caronae.flow.rides.RidesFragment
 import com.caronae.withu.caronae.models.main.MainState
 import com.caronae.withu.caronae.models.main.State
 import com.caronae.withu.caronae.network.auth.BaseAuth
+import com.crashlytics.android.Crashlytics
+import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -25,6 +27,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        Fabric.with(this, Crashlytics())
 
         model = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
